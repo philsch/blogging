@@ -1,0 +1,18 @@
+{
+  "name": "apollo1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philipp Schmiedel <mail@philippschmiedel.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/error-reporting": "^0.5.2",
+    "apollo-server-express": "^2.3.1",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2"
+  }
+}
