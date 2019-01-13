@@ -1,7 +1,7 @@
 Monitor your GraphQL Apollo Server in Google Cloud
 ==================================================
 
-Blog article: (URL HERE)
+Blog article: https://medium.com/@philipp.schmiedel/monitor-your-graphql-apollo-server-in-google-cloud-d908ee719fe3
 
 Used gists:
 

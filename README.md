@@ -1,7 +1,7 @@
 Blogging
 ========
 
-Example and snippets used at my blog [https://medium.com/@phil_in_muc](https://medium.com/@phil_in_muc).
+Example and snippets used at my blog [https://medium.com/@philipp.schmiedel](https://medium.com/@philipp.schmiedel).
 
 ### Disclaimer
 
