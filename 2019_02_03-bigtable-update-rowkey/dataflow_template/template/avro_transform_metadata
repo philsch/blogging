@@ -1,0 +1,30 @@
+{
+    "name": "avro_transform",
+    "description": "Pipeline to transform Big Table exported avro files",
+    "parameters": [
+        {
+            "name": "input",
+            "label": "Input Cloud Storage File(s)",
+            "help_text": "Path of the file pattern glob to read from. For example gs://bucket/test-*.avro",
+            "regexes": [
+                "^gs:\/\/[^\n\r]+$"
+            ],
+            "is_optional": false
+        },
+        {
+            "name": "output",
+            "label": "Output Cloud Storage File(s)",
+            "help_text": "Path of the file pattern glob to write to.",
+            "regexes": [
+                "^gs:\/\/[^\n\r]+$"
+            ],
+            "is_optional": false
+        },
+        {
+            "name": "fastavro",
+            "label": "Fastavro I/O library",
+            "help_text": "Use fastavro I/O library.",
+            "is_optional": true
+        }
+    ]
+}
