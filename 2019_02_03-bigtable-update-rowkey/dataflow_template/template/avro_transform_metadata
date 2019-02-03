@@ -19,12 +19,6 @@
                 "^gs:\/\/[^\n\r]+$"
             ],
             "is_optional": false
-        },
-        {
-            "name": "fastavro",
-            "label": "Fastavro I/O library",
-            "help_text": "Use fastavro I/O library.",
-            "is_optional": true
         }
     ]
 }

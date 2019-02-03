@@ -31,8 +31,7 @@ python -m template.avro_transform \
     --runner DataflowRunner \
     --staging_location gs://bigtable-transform/staging \ 
     --temp_location gs://bigtable-transform/tmp \
-    --template_location gs://bigtable-transform/templates/avro_transform 
-    --project usc-api-199318 
+    --template_location gs://bigtable-transform/templates/avro_transform
 ```
 
 Additionally you have to place the metadata file in the template directory:

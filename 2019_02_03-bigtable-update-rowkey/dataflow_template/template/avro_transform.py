@@ -90,10 +90,6 @@ class AvroTransformOptions(PipelineOptions):
         parser.add_value_provider_argument(
             '--output',
             help='Output avro file to write results to')
-        parser.add_value_provider_argument(
-            '--fastavro',
-            default=False,
-            help='When set, use fastavro for Avro I/O')
 
 
 class CellTransformDoFn(beam.DoFn):
@@ -158,10 +154,9 @@ def run():
 
     steps = (
             pipeline
-            | 'Create' >> beam.Create(['%s*' % options.input])
-            | 'ReadData' >> beam.io.ReadAllFromAvro(use_fastavro=options.fastavro)
+            | 'ReadData' >> beam.io.ReadFromAvro(options.input, use_fastavro=True)
             | 'Transaform rowkey' >> beam.ParDo(CellTransformDoFn())
-            | 'WriteData' >> beam.io.WriteToAvro(options.output, BIG_TABLE_SCHEMA, use_fastavro=options.fastavro))
+            | 'WriteData' >> beam.io.WriteToAvro(options.output, BIG_TABLE_SCHEMA, use_fastavro=True))
 
     result = pipeline.run()
     result.wait_until_finish()
