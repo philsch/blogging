@@ -1,7 +1,7 @@
 How to update row keys in Google Big Table
 ==========================================
 
-Blog article: (unpublished) 
+Blog article: https://medium.com/@philipp.schmiedel/how-to-update-row-keys-in-google-big-table-4db0c85e3be 
 
 Used gists:
 
