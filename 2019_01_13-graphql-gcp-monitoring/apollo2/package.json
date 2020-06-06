@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@google-cloud/error-reporting": "^0.5.2",
-    "apollo-server-express": "^2.3.1",
+    "apollo-server-express": "^2.14.2",
     "express": "^4.16.4",
     "graphql": "^14.0.2"
   }
